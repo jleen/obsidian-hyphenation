@@ -1,12 +1,13 @@
-import { Plugin } from "obsidian";
+import { Plugin } from "obsidian"
+import { hyphenateHTMLSync } from "hyphen/en"
 
 export default class ExamplePlugin extends Plugin {
 	async onload() {
 		this.registerMarkdownPostProcessor((element, context) => {
-			const divs = element.querySelectorAll("p");
+			const chunks = element.querySelectorAll("p")
 
-			divs.forEach((div) => {
-				div.lang = "en";
+			chunks.forEach((chunk) => {
+				chunk.innerHTML = hyphenateHTMLSync(chunk.innerHTML)
 			});
 		});
 	}
