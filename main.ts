@@ -8,7 +8,7 @@ export default class ExamplePlugin extends Plugin {
 
 			chunks.forEach((chunk) => {
 				chunk.innerHTML = hyphenateHTMLSync(chunk.innerHTML)
-			});
-		});
+			})
+		})
 	}
 }
