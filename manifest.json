@@ -3,7 +3,7 @@
 	"name": "Hyphenation",
 	"version": "1.0.1",
 	"minAppVersion": "0.12.0",
-	"description": "Word hyphenation in Previews. Pairs nicely with the Justification plugin.",
+	"description": "Automatically hyphenate text displayed in Previews.",
 	"author": "John Leen",
 	"authorUrl": "https://github.com/jleen/",
 	"isDesktopOnly": false
